@@ -24,7 +24,7 @@ const getConfessionsSuccess = (data) => {
 }
 
 const getConfessionsFailure = () => {
-  location.reload()
+  // something
 }
 
 module.exports = {
