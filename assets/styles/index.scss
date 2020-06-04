@@ -8,6 +8,19 @@ body {
   font-family: 'Cormorant Garamond', serif;
 }
 
+button {
+  background-color: #964b00;
+  color: #c08457;
+  border-radius: 12px;
+  border: 2px solid #964b00;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #1f1204;
+  color: #c08457;
+}
+
 footer {
   font-size: 18px;
   text-align: center;
@@ -44,7 +57,15 @@ header {
   color: pink;
 }
 
-.singleConfession {
-  border: dotted 2px black;
-  padding-bottom: 5px;
+#singleConfession {
+  margin-bottom: 4px;
+  background-color: #341d08;
+  text-indent: 25px;
+  padding-left: 10px;
+  padding-right: 5px;
+  font-size: 20px;
+}
+
+#singleConfession :nth-child(odd) {
+  background-color: #7c3f06;
 }
