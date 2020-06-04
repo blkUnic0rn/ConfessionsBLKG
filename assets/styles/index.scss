@@ -18,6 +18,7 @@ footer {
 header {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding-top: 15px;
   padding-left: 15px;
@@ -37,4 +38,13 @@ header {
   bottom: 0;
   width: 100%;
   height: 2.5rem;            // Footer height
+}
+
+#messageboard {
+  color: pink;
+}
+
+.singleConfession {
+  border: dotted 2px black;
+  padding-bottom: 5px;
 }

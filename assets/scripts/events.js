@@ -8,6 +8,7 @@ const postConfession = (event) => {
   event.preventDefault()
   const form = event.target
   const data = getFormFields(form)
+  console.log(data)
 
   api.createConfession(data)
     .then(ui.onCreateConfessionSuccess)
@@ -21,10 +22,12 @@ const loadConfessions = () => {
 }
 
 const addHandlers = () => {
-  $('#sendConfession').on('submit', postConfession)
+  $('#confessionsSubmission').on('submit', postConfession)
   loadConfessions()
 }
-
+$('#confessionsModalButton').on('click', function (e) {
+  e.preventDefault()
+})
 module.exports = {
   addHandlers
 }

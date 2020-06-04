@@ -16,7 +16,9 @@
 <body>
   <div id="page-container">
     <header>
+      <div>
       <h1> Confessions of a Black Girl </h1>
+    </div>
     </header>
     <div id="content-wrap">
       <div id='confessionsList'>
@@ -25,7 +27,7 @@
     <footer id="footer">
       <p> Confessions of a Black Girl was created to voice the thoughts and concerns of black women around the world.<br> We speak. We will be heard. We will survive. We will THRIVE. </p>
       <p> If you would like to submit a confession please use the submission form below </p>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confessionsModal" data-whatever="kaylawilli94@gmail.com">Submit Confessions Here</button>
+      <button type="button" class="btn btn-primary" id="confessionsModalButton" data-toggle="modal" data-target="#confessionsModal">Submit Confessions Here</button>
     </footer>
   </div>
   <div class="modal fade" id="confessionsModal" tabindex="-1" role="dialog" aria-labelledby="confessionsModal" aria-hidden="true">
@@ -38,17 +40,16 @@
           </button>
         </div>
         <div class="modal-body">
+          <p id='messageboard'></p>
           <p> Please include your name and age at the bottom of your confession </p>
-          <form>
-            <div class="form-group">
-              <label for="message-text" class="col-form-label">Message:</label>
-              <textarea class="form-control" id="message-text"></textarea>
-            </div>
+          <form class="confessionsSubmission" id="confessionsSubmission">
+            <fieldset>
+              <label for="message" class="col-form-label">Message:</label>
+              <textarea name='request[message]' class="form-control" id="message-text"></textarea>
+              <br>
+              <button type="submit" id="sendConfession" class="btn btn-primary"> Send Confession </button>
+            </fieldset>
           </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" id="sendConfession" class="btn btn-primary">Send Confession</button>
         </div>
       </div>
     </div>

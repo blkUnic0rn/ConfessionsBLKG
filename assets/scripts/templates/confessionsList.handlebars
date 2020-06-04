@@ -1,0 +1,10 @@
+{{#each confessions as |confession|}}
+  <section class='confessionsSubmissions' data-id="{{confession.id}}">
+    <div class='container'>
+      <div class="text-block singleConfession">
+          {{confession.message}}
+          --{{confession.name}}, {{confession.age}}
+      </div>
+    </div>
+  </section>
+{{/each}}
