@@ -9,20 +9,6 @@ body {
   font-family: 'Cormorant Garamond', serif;
 }
 
-button {
-  background-color: #000000;
-  color: #FFFF00;
-  border-radius: 12px;
-  border: 2px solid #FFFF00;
-  text-decoration: none;
-}
-
-button:hover {
-  background-color: #FFFF00;
-  color: #000000;
-  border: 2px solid #000000;
-}
-
 footer {
   font-size: 16px;
   text-align: center;
@@ -56,6 +42,20 @@ header {
   margin: auto auto 45px;
   flex-wrap: nowrap;
   overflow-y: auto;
+}
+
+#confessionsModalButton {
+  background-color: #000000;
+  color: #FFFF00;
+  border-radius: 12px;
+  border: 2px solid #FFFF00;
+  text-decoration: none;
+}
+
+#confessionsModalButton:hover {
+  background-color: #FFFF00;
+  color: #000000;
+  border: 2px solid #000000;
 }
 
 #messageboard {
