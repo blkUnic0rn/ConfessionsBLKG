@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Confessions of a Black Girl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+<body>
+    <header>
+      <div class= 'header'>
+        <h1> Confessions of a Black Girl </h1>
+      </div>
+    </header>
+    <div id='confessionsList'>
+    </div>
+    <footer id="footer" class='page-footer font-small blue fixed-bottom'>
+      <p> Confessions of a Black Girl was created to voice the thoughts and concerns of black women around the world. We speak. We will be heard. We will survive. We will THRIVE. <br> If you would like to submit a confession please use the submission form below </p>
+      <button type="button" id="confessionsModalButton" data-toggle="modal" data-target="#confessionsModal">Submit Confessions Here</button>
+    </footer>
+  <div class="modal fade" id="confessionsModal" tabindex="-1" role="dialog" aria-labelledby="confessionsModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content text-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confessionsModalLabel">New Confession</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id='messageboard'></p>
+          <p> Please type your confession below and include your name and age. <br> <br> Feel free to email your submission instead to: blkgirlconfessions@gmail.com </p>
+          <form class="confessionsSubmission" id="confessionsSubmission">
+            <fieldset>
+              <label for="message" class="col-form-label">Message:</label>
+              <textarea name='request[message]' class="form-control" id="message-text" required></textarea>
+              <br>
+              <button type="submit" id="sendConfession"> Send Confession </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
