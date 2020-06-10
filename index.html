@@ -14,22 +14,17 @@
 </head>
 
 <body>
-  <div id="page-container">
     <header>
       <div>
       <h1> Confessions of a Black Girl </h1>
     </div>
     </header>
-    <div id="content-wrap">
-      <div id='confessionsList'>
-      </div>
+    <div id='confessionsList'>
     </div>
     <footer id="footer" class='page-footer font-small blue fixed-bottom'>
-      <p> Confessions of a Black Girl was created to voice the thoughts and concerns of black women around the world. We speak. We will be heard. We will survive. We will THRIVE. </p>
-      <p> If you would like to submit a confession please use the submission form below </p>
+      <p> Confessions of a Black Girl was created to voice the thoughts and concerns of black women around the world. We speak. We will be heard. We will survive. We will THRIVE. <br> If you would like to submit a confession please use the submission form below </p>
       <button type="button" id="confessionsModalButton" data-toggle="modal" data-target="#confessionsModal">Submit Confessions Here</button>
     </footer>
-  </div>
   <div class="modal fade" id="confessionsModal" tabindex="-1" role="dialog" aria-labelledby="confessionsModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content text-dark">
@@ -41,11 +36,11 @@
         </div>
         <div class="modal-body">
           <p id='messageboard'></p>
-          <p> Please include your name and age at the bottom of your confession </p>
+          <p> Please type your confession below and include your name and age. <br> <br> Feel free to email your submission instead to: blkgirlconfessions@gmail.com </p>
           <form class="confessionsSubmission" id="confessionsSubmission">
             <fieldset>
               <label for="message" class="col-form-label">Message:</label>
-              <textarea name='request[message]' class="form-control" id="message-text"></textarea>
+              <textarea name='request[message]' class="form-control" id="message-text" required></textarea>
               <br>
               <button type="submit" id="sendConfession"> Send Confession </button>
             </fieldset>

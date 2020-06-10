@@ -7,6 +7,9 @@ body {
   background-image: url('./public/blm.jpg');
   color: #ffffff;
   font-family: 'Cormorant Garamond', serif;
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both;
 }
 
 footer {
@@ -14,6 +17,7 @@ footer {
   text-align: center;
   padding-left: 15px;
   background-color: #212121;
+  margin-top: 15px;
 }
 
 header {
@@ -26,19 +30,14 @@ header {
   background-color: #212121;
 }
 
-#content-wrap {
-  margin-top: 5px;
-}
-
 #confessionsList {
   align-items: center;
-  background-color: rgba(34, 34, 34, .5);
+  background-color: rgba(34, 34, 34, .6);
   flex-direction: column;
   display: flex;
-  width: 500px;
+  width: 750px;
   align-items: center;
-  width: 75%;
-  height: 75%;
+  height: 750px;
   margin: auto auto 45px;
   flex-wrap: nowrap;
   overflow-y: auto;
