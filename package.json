@@ -9,7 +9,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.1.2",
-    "caniuse-db": "^1.0.30001079",
+    "caniuse-db": "^1.0.30001081",
     "chokidar": "^3.4.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3"

@@ -69,3 +69,31 @@ header {
   font-size: 20px;
   border: 2px yellow solid;
 }
+
+@media only screen and (max-width: 600px) {
+  header {
+    margin: 0 auto;
+    text-align: center;
+    width: 100% !important;
+  }
+  h1 {
+    font-size: 16px;
+  }
+
+  #confessionsList {
+    width: 75%;
+  }
+
+  #singleConfession {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+    height: 150px;
+  }
+
+  body {
+    padding-bottom: 20px;
+  }
+}
